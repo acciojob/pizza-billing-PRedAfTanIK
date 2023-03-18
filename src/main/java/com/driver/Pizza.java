@@ -76,12 +76,9 @@ public class Pizza {
         return this.bill;
     }
 
-    public void giveFreeCheeseAndToppings(){
-        wanted[Ingredients.CHEESE.ordinal()] = true;
-        prices[Ingredients.CHEESE.ordinal()] = 0;
-
-        wanted[Ingredients.TOPPINGS.ordinal()] = true;
-        prices[Ingredients.TOPPINGS.ordinal()] = 0;
+    public void giveCheeseAndToppings(){
+        addExtraCheese();
+        addExtraToppings();
     }
 }
 
